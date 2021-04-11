@@ -5,7 +5,8 @@
   "main": "dist/videojs-contextmenu-pt.cjs.js",
   "keywords": [
     "videojs",
-    "videojs-plugin"
+    "videojs-plugin",
+    "peertube"
   ],
   "author": "Brightcove, Inc.",
   "license": "Apache-2.0",
