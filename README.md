@@ -1,18 +1,9 @@
-# videojs-contextmenu-ui
+# videojs-contextmenu-pt
 
-[![Build Status](https://travis-ci.org/brightcove/videojs-contextmenu-ui.svg?branch=master)](https://travis-ci.org/brightcove/videojs-contextmenu-ui)
-[![Greenkeeper badge](https://badges.greenkeeper.io/brightcove/videojs-contextmenu-ui.svg)](https://greenkeeper.io/)
-[![Slack Status](http://slack.videojs.com/badge.svg)](http://slack.videojs.com)
+A cross-device context menu UI for video.js players. Forked from `videojs-contextmenu-ui` to add support for features needed in PeerTube's development, hence the suffix.
 
-[![NPM](https://nodei.co/npm/videojs-contextmenu-ui.png?downloads=true&downloadRank=true)](https://nodei.co/npm/videojs-contextmenu-ui/)
-
-A cross-device context menu UI for video.js players.
-
-> **Note:** Versions 4.x and lower of this plugin depended on the [videojs-contextmenu][contextmenu] plugin, but that plugin is not included with it. It must be included separately.
->
-> Versions 5.x and newer does not use the videojs-contextmenu plugin, so do not include it. Versions 5.x and newer rely on the native `contextmenu` event.
-
-Maintenance Status: Stable
+Features added:
+- support for content as a function, allowing dynamic menus evaluated on `oncontextmenu` event
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -36,7 +27,7 @@ Maintenance Status: Stable
 ## Installation
 
 ```sh
-npm install --save videojs-contextmenu-ui
+npm install --save videojs-contextmenu-pt
 ```
 
 ## Usage
@@ -109,7 +100,7 @@ player.contextmenuUI({
 
 ## Inclusion
 
-To include videojs-contextmenu-ui on your website or web application, use any of the following methods.
+To include videojs-contextmenu-pt on your website or web application, use any of the following methods.
 
 ### `<script>` Tag
 
@@ -117,7 +108,7 @@ This is the simplest case. Get the script in whatever way you prefer and include
 
 ```html
 <script src="//path/to/video.min.js"></script>
-<script src="//path/to/videojs-contextmenu-ui.min.js"></script>
+<script src="//path/to/videojs-contextmenu-pt.min.js"></script>
 <script>
   var player = videojs('my-video');
 
@@ -127,7 +118,7 @@ This is the simplest case. Get the script in whatever way you prefer and include
 
 ### CommonJS/Browserify
 
-When using with Browserify, install videojs-contextmenu-ui via npm and `require` the plugin as you would any other module.
+When using with Browserify, install videojs-contextmenu-pt via npm and `require` the plugin as you would any other module.
 
 ```js
 var videojs = require('video.js');
@@ -135,7 +126,7 @@ var videojs = require('video.js');
 // The actual plugin function is exported by this module, but it is also
 // attached to the `Player.prototype`; so, there is no need to assign it
 // to a variable.
-require('videojs-contextmenu-ui');
+require('videojs-contextmenu-pt');
 
 var player = videojs('my-video');
 
@@ -147,7 +138,7 @@ player.contextmenuUI();
 When using with RequireJS (or another AMD library), get the script in whatever way you prefer and `require` the plugin as you normally would:
 
 ```js
-require(['video.js', 'videojs-contextmenu-ui'], function(videojs) {
+require(['video.js', 'videojs-contextmenu-pt'], function(videojs) {
   var player = videojs('my-video');
 
   player.contextmenuUI();
@@ -157,7 +148,6 @@ require(['video.js', 'videojs-contextmenu-ui'], function(videojs) {
 ## License
 
 Apache-2.0. Copyright (c) Brightcove, Inc.
-
 
 [contextmenu]: https://github.com/brightcove/videojs-contextmenu
 [videojs]: http://videojs.com/

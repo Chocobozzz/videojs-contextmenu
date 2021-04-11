@@ -1,22 +1,22 @@
 {
-  "name": "videojs-contextmenu-ui",
-  "version": "5.2.0",
+  "name": "videojs-contextmenu-pt",
+  "version": "5.3.0",
   "description": "A cross-device context menu UI for video.js players.",
-  "main": "dist/videojs-contextmenu-ui.cjs.js",
+  "main": "dist/videojs-contextmenu-pt.cjs.js",
   "keywords": [
     "videojs",
     "videojs-plugin"
   ],
   "author": "Brightcove, Inc.",
   "license": "Apache-2.0",
-  "module": "dist/videojs-contextmenu-ui.es.js",
+  "module": "dist/videojs-contextmenu-pt.es.js",
   "generator-videojs-plugin": {
     "version": "7.3.2"
   },
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
-    "build:css": "postcss -o dist/videojs-contextmenu-ui.css --config scripts/postcss.config.js src/plugin.css",
+    "build:css": "postcss -o dist/videojs-contextmenu-pt.css --config scripts/postcss.config.js src/plugin.css",
     "build:js": "rollup -c scripts/rollup.config.js",
     "clean": "shx rm -rf ./dist ./test/dist",
     "postclean": "shx mkdir -p ./dist ./test/dist",
