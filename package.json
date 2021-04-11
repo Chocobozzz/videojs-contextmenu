@@ -8,6 +8,10 @@
     "videojs-plugin",
     "peertube"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rigelk/videojs-contextmenu-pt.git"
+  },
   "author": "Brightcove, Inc.",
   "license": "Apache-2.0",
   "module": "dist/videojs-contextmenu-pt.es.js",
