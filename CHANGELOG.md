@@ -1,3 +1,6 @@
+<a name="5.4.1"></a>
+## [5.4.1](https://github.com/rigelk/videojs-contextmenu-pt/compare/v5.4.0...v5.4.1) (2021-04-11)
+
 <a name="5.4.0"></a>
 # [5.4.0](https://github.com/rigelk/videojs-contextmenu-pt/compare/v5.2.0...v5.4.0) (2021-04-11)
 
